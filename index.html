@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    <link rel="stylesheet" href="panel.css" type="text/css" />
+    
+    <title>Panel</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Remote Patient Monitor</a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Lorem</a></li>
+          <li><a href="#">Ipsum</a></li>
+          <li><a href="#">Dolor</a></li>
+        </ul>
+        
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+    
+      <div class="container-fluid">
+        <div class="box" id="side">
+          
+          <div class="card-panel">
+            <div class="card-left">
+              <span class="card-name"><strong>Cardiograph</strong></span>
+              <div class="card-btn-group">
+                <input class="btn btn-sm card-btn" type="button" value="View History" name=""/>
+              </div>
+            </div>
+            <div class="card-right">
+              <span class="card-name"><strong>HR</strong></span>
+              <span class="card-unit">BPM</span>
+              <span class="card-value">92</span>
+              <div class="card-btn-group">
+                <button class="btn btn-sm card-btn" type="button"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> </button>
+                <button class="btn btn-sm card-btn" type="button"><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></button>
+                <button class="btn btn-sm card-btn" type="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-panel">
+            <div class="card-left">
+              <span class="card-name"><strong>O<sub>2</sub> Saturation</strong></span>
+              <div class="card-btn-group">
+                <input class="btn btn-sm card-btn" type="button" value="View History" name=""/>
+              </div>
+            </div>
+            <div class="card-right">
+              <span class="card-name"><strong>SPO<sub>2</sub></strong></span>
+              <span class="card-unit">PLETH</span>
+              <span class="card-value">98</span>
+              <div class="card-btn-group">
+                <button class="btn btn-sm card-btn" type="button"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> </button>
+                <button class="btn btn-sm card-btn" type="button"><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></button>
+                <button class="btn btn-sm card-btn" type="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-panel">
+            <div class="card-left">
+              <span class="card-name"><strong>Respiration</strong></span>
+              <div class="card-btn-group">
+                <input class="btn btn-sm card-btn" type="button" value="View History" name=""/>
+              </div>
+            </div>
+            <div class="card-right">
+              <span class="card-name"><strong>ETCO<sub>2</sub></strong></span>
+              <span class="card-unit">mmHg</span>
+              <span class="card-value">35</span>
+              <span class="card-sub-value">15</span>
+              <span class="card-sub-unit">RR</span>
+            </div>
+          </div>
+          
+          <div class="card-panel">
+            <div class="card-left">
+              <span class="card-name"><strong>Blood Pressure</strong></span>
+              <div class="card-btn-group">
+                <input class="btn btn-sm card-btn" type="button" value="View History" name=""/>
+              </div>
+            </div>
+            <div class="card-right">
+              <span class="card-name"><strong>ABP</strong></span>
+              <span class="card-unit">mmHg</span>
+              <span class="card-first-value">220</span>
+              <span class="card-second-value">160</span>
+
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="box" id="middle">
+          <div class="canvas-div"><canvas id="canvas1"></canvas></div>
+          <div class="canvas-div"><canvas id="canvas2"></canvas></div>
+          <div class="canvas-div"><canvas id="canvas3"></canvas></div>
+          <div id="pat">
+            <div id="pat_title">
+              <span>Patient Name</span>
+            </div>
+            <div id="pat_name">
+              <span>Stephenson, Kimberly Ann </span>
+            </div>
+            
+          </div>
+          
+          <div id="pos-temp">
+            <div id="temp">
+              <span>Temp</span>
+              <span style="float:right;"><sup>o</sup>C</span>
+              <span class="card-value">37</span>
+            </div>
+            <div id="pos">
+              <span>Position</span>
+              <span class="card-value">Sit</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="box" id="bottom">ELET2415 - 2018</div>
+      </div>
+          
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script type="text/javascript" src="panel_hr.js"></script>
+    <script type="text/javascript" src="panel_o2.js"></script>
+    <script type="text/javascript" src="panel_r.js"></script>
+  </body>
+</html>
